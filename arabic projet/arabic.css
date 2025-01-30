@@ -1,0 +1,140 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    direction: rtl;
+}
+
+header {
+    background-image: linear-gradient(blue, #4CAF50);
+    background-repeat: no-repeat;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    font-size: 1em;
+}
+
+/* Tab Navigation */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tab-button {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 10px 10px 0 0;
+}
+
+.tab-button:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+.tab-button.active {
+    background-color: #388E3C;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+}
+
+.tab-content.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Section Styles */
+h2 {
+    color: #388E3C;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li {
+    background: url('https://img.icons8.com/ios-filled/50/4CAF50/checked.png') no-repeat left center;
+    padding-left: 25px;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tab-button {
+        padding: 12px 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+.beautiful {
+    font-size: calc(1em +10px); /* Makes text 20px bigger than the base font size */
+}
+body {
+    font-size: calc(1em + 10px); /* Increase base font size */
+    background-image: linear-gradient(to right, rgb(0, 153, 255), rgb(255, 187, 0));
+    font-family: sans-serif;
+}
+h1, h2, p {
+    font-size: calc(1em + 10px); /* Makes h1, h2, and p text 20px bigger */
+}
+h1, h2 {
+    font-size: calc(1em + 10px);
+}
+#fullscreen-btn{
+    width: 250px;
+    height: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
